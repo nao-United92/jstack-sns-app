@@ -1,5 +1,6 @@
-import { j } from "./jstack"
-import { postRouter } from "./routers/post-router"
+import { j } from './jstack';
+import { pingRouter } from './routers/ping-router';
+import { postRouter } from './routers/post-router';
 
 /**
  * This is your base API.
@@ -9,9 +10,9 @@ import { postRouter } from "./routers/post-router"
  */
 const api = j
   .router()
-  .basePath("/api")
+  .basePath('/api')
   .use(j.defaults.cors)
-  .onError(j.defaults.errorHandler)
+  .onError(j.defaults.errorHandler);
 
 /**
  * This is the main router for your server.
@@ -19,8 +20,9 @@ const api = j
  */
 const appRouter = j.mergeRouters(api, {
   post: postRouter,
-})
+  system: pingRouter,
+});
 
-export type AppRouter = typeof appRouter
+export type AppRouter = typeof appRouter;
 
-export default appRouter
+export default appRouter;
