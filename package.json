@@ -15,6 +15,7 @@
   "dependencies": {
     "@clerk/nextjs": "^6.20.1",
     "@neondatabase/serverless": "^0.10.4",
+    "@ngrok/ngrok": "^1.5.1",
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/postcss": "^4.0.0",
     "@tanstack/react-query": "^5.51.23",
@@ -46,5 +47,18 @@
     "tw-animate-css": "^1.3.0",
     "typescript": "^5",
     "wrangler": "^4.0.0"
-  }
+  },
+  "description": "Ship high-performance Next.js apps for extremely cheap",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nao-United92/jstack-sns-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nao-United92/jstack-sns-app/issues"
+  },
+  "homepage": "https://github.com/nao-United92/jstack-sns-app#readme"
 }
