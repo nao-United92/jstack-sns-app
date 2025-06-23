@@ -30,7 +30,6 @@ function PostList() {
       ))}
     </div>
   );
-  return <div>PostList</div>;
 }
 
 export default PostList;
