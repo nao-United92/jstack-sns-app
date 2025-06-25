@@ -31,7 +31,7 @@ export const postRouter = j.router({
       z.object({
         content: z.string().min(1),
         handle: z.string(),
-        image: z.string().optional(),
+        image: z.string().nullable(),
       })
     )
     .mutation(async ({ c, ctx, input }) => {
