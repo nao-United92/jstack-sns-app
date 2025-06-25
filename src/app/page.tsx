@@ -1,10 +1,12 @@
+'use client';
+
 import PostForm from '@/components/ui/PostForm';
 import PostList from '@/components/ui/PostList';
 import { client } from '@/lib/client';
 import { useAuth } from '@clerk/nextjs';
 import { useQuery } from '@tanstack/react-query';
 
-export default async function Home() {
+export default function Home() {
   const { userId } = useAuth();
 
   const { data: user } = useQuery({
@@ -25,7 +27,7 @@ export default async function Home() {
       <div>
         <PostForm user={user} />
       </div>
-      <PostList />
+      <PostList user={user} />
     </div>
   );
 }

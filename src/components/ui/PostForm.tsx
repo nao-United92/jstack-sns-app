@@ -22,7 +22,7 @@ function PostForm({ user }: { user: UserProfile }) {
       return await res.json();
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['posts'] });
+      queryClient.invalidateQueries({ queryKey: ['posts', user.handle] });
       setContent('');
       setImage(null);
     },
