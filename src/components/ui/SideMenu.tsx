@@ -1,4 +1,6 @@
-import { SignOutButton, useClerk } from '@clerk/nextjs';
+'use client';
+
+import { useClerk } from '@clerk/nextjs';
 import React from 'react';
 import { Search, ListTodo, Bookmark, User, Twitter } from 'lucide-react';
 import Link from 'next/link';
