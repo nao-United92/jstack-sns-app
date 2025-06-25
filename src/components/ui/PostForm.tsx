@@ -93,6 +93,7 @@ function PostForm({ user }: { user: UserProfile }) {
               onChange={handleImageSelect}
             />
           </div>
+          <button type="submit">投稿する</button>
         </div>
       </div>
     </form>
