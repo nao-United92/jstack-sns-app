@@ -16,6 +16,7 @@
     "@clerk/nextjs": "^6.20.1",
     "@neondatabase/serverless": "^0.10.4",
     "@ngrok/ngrok": "^1.5.1",
+    "@radix-ui/react-avatar": "^1.1.10",
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/postcss": "^4.0.0",
     "@tanstack/react-query": "^5.51.23",
