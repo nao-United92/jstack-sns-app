@@ -1,13 +1,12 @@
 import type { Metadata } from 'next';
-import { Providers } from './components/providers';
-import { ClerkProvider } from '@clerk/nextjs';
-
+import { ClerkProvider, SignedIn, SignedOut } from '@clerk/nextjs';
 import './globals.css';
-import SideMenu from '@/components/ui/SideMenu';
+import { Providers } from './components/providers';
+import SideMenu from '@/components/SideMenu';
 
 export const metadata: Metadata = {
-  title: 'JStack App',
-  description: 'Created using JStack',
+  title: 'JStack Twitter Clone',
+  description: 'Twitter clone created using JStack',
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 };
 

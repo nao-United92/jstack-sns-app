@@ -34,7 +34,7 @@ export default function PostForm({ user }: { user: UserProfile }) {
       createPostMutation.mutate({
         content,
         handle: user.handle,
-        image: image || undefined,
+        image: image || '',
       });
     }
   };
