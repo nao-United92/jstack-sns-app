@@ -6,6 +6,6 @@ export type Post = {
   image: string | null;
   createdAt: Date | string;
   updatedAt: Date | string;
-  avatorUrl: string | null;
+  avatarUrl: string | null;
   name: string;
 };
