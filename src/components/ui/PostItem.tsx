@@ -30,6 +30,17 @@ export function PostItem({ post, currentUserHandle }: PostItemProps) {
             </span>
           </div>
           <p className="mt-1 text-gray-900">{post.content}</p>
+          {post.image && (
+            <div className="mt-2 rounded-xl overflow-hidden relative max-h-[300px]">
+              <Image
+                src={post.image}
+                alt="Post image"
+                width={500}
+                height={300}
+                className="object-contain max-w-full"
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>
