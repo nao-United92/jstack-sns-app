@@ -41,6 +41,39 @@ export function PostItem({ post, currentUserHandle }: PostItemProps) {
               />
             </div>
           )}
+          <div className="flex justify-between max-w-md mt-3">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="h-8 px-0 text-gray-500 hover:text-blue-500"
+            >
+              <MessageCircle className="h-[18px] w-[18px]" />
+              <span className="ml-2 text-xs">0</span>
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="h-8 px-0 text-gray-500 hover:text-green-500"
+            >
+              <Repeat className="h-[18px] w-[18px]" />
+              <span className="ml-2 text-xs">0</span>
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="h-8 px-0 text-gray-500 hover:text-red-500"
+            >
+              <Heart className={`h-[18px] w-[18px]`} />
+              <span className="ml-2 text-xs">{post.like}</span>
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="h-8 px-0 text-gray-500 hover:text-blue-500"
+            >
+              <Share className="h-[18px] w-[18px]" />
+            </Button>
+          </div>
         </div>
       </div>
     </div>
